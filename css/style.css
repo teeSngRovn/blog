@@ -569,56 +569,64 @@ hr.small {
 }
 .post-preview {
   display: flex;
+  flex-direction: column;
+}
+.post-preview + hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.post-header {
+  display: flex;
   flex-direction: row;
   height: 100px;
 }
-.post-preview > .post-left {
+.post-header > .post-left {
   width: 50%;
 }
-.post-preview > .post-left > a {
+.post-header > .post-left > a {
   color: #404040;
 }
-.post-preview > .post-left > a:hover,
-.post-preview > .post-left > a:focus {
+.post-header > .post-left > a:hover,
+.post-header > .post-left > a:focus {
   text-decoration: none;
   color: #0085a1;
 }
-.post-preview > .post-left > a > .post-title {
+.post-header > .post-left > a > .post-title {
   font-size: 30px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
-.post-preview > .post-left > a > .post-title.archive {
+.post-header > .post-left > a > .post-title.archive {
   font-size: 22px;
 }
-.post-preview > .post-left > a > .post-subtitle {
+.post-header > .post-left > a > .post-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
-.post-preview > .post-left > .post-meta {
+.post-header > .post-left > .post-meta {
   color: #808080;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
 }
-.post-preview > .post-left > .post-meta.archive {
+.post-header > .post-left > .post-meta.archive {
   font-size: 16px;
 }
-.post-preview > .post-left > .post-meta > a {
+.post-header > .post-left > .post-meta > a {
   text-decoration: none;
   color: #404040;
 }
-.post-preview > .post-left > .post-meta > a:hover,
-.post-preview > .post-left > .post-meta > a:focus {
+.post-header > .post-left > .post-meta > a:hover,
+.post-header > .post-left > .post-meta > a:focus {
   color: #0085a1;
   text-decoration: underline;
 }
-.post-preview > .post-right {
+.post-header > .post-right {
   width: 50%;
   margin-right: 0;
 }
-.post-preview > .post-right > .thumbnail {
+.post-header > .post-right > .thumbnail {
   float: right;
   width: auto;
   height: auto;
@@ -627,9 +635,17 @@ hr.small {
   object-fit: cover;
 }
 @media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
+  .post-header > a > .post-title {
     font-size: 36px;
   }
+}
+.abstract {
+  word-break: break-all;
+}
+.abstract > .abstract-para {
+  font-size: 15px;
+  margin: 20px 0 0 0;
+  word-wrap: break-word;
 }
 .section-heading {
   font-size: 36px;
