@@ -1,0 +1,166 @@
+.float-bar a:hover,
+.float-bar i:hover {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+@media only screen and (min-width: 768px) {
+  .float-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #333;
+    height: 60px;
+    margin: 0 10px;
+  }
+  .float-bar > .button {
+    width: 50%;
+    font-size: 18px;
+  }
+  .float-bar > .button >button {
+    display: none;
+  }
+  .float-bar > .button >a {
+    margin: 10px;
+    color: #777;
+  }
+  .float-bar > .menu {
+    width: 50%;
+    font-size: 12px;
+  }
+  .float-bar > .menu >ul {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: right;
+    margin: 0;
+    margin-right: -10px;
+    right: 10px;
+    padding: 0;
+  }
+  .float-bar > .menu >ul li {
+    list-style: none;
+    text-align: center;
+  }
+  .float-bar > .menu >ul li >a {
+    padding: 20px;
+    text-decoration: none;
+    color: #777;
+  }
+  .float-bar > .menu >ul li >a >i {
+    font-size: 2em;
+    text-align: center;
+    color: #777;
+  }
+}
+@media only screen and (max-width: 768px) {
+  * {
+    transition: all 0.2s ease-out;
+  }
+  .float-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #333;
+    height: auto;
+    margin: 0;
+  }
+  .float-bar > .button {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    float: none;
+    height: 50px;
+  }
+  .float-bar > .button >button {
+    display: block;
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    padding-top: 5px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #888;
+    border-radius: 4px;
+  }
+  .float-bar > .button >button .icon-bar {
+    background-color: #888;
+    margin-top: 4px;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .float-bar > .button button:hover {
+    background-color: #ddd;
+    border: 1px solid transparent;
+  }
+  .float-bar > .button >a {
+    float: left;
+    height: inherit;
+    margin: 0 15px;
+    padding-top: 13px;
+    color: #777;
+  }
+  .float-bar > .menu {
+    width: 100%;
+    font-size: 12px;
+    border-top: 0.5px solid #ddd;
+    border-bottom: 0.5px solid #ddd;
+    background-color: #fff;
+  }
+  .float-bar > .menu >ul {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: left;
+    align-items: flex-start;
+    padding: 6px 0 0 0;
+    width: 100%;
+  }
+  .float-bar > .menu >ul li {
+    list-style: none;
+    text-align: center;
+    margin: 11px 15px;
+  }
+  .float-bar > .menu >ul li >a {
+    padding: 0;
+    text-decoration: none;
+    color: #777;
+  }
+  .float-bar > .menu >ul li >a >i {
+    font-size: 2em;
+    text-align: center;
+    color: #777;
+  }
+  .float-bar > .menu >ul li:last-child {
+    list-style: none;
+    width: 100%;
+    margin: 0 0 5px 0;
+  }
+  .float-bar > .menu >ul li:last-child >a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #777;
+  }
+  .float-bar > .menu >ul li:last-child >a >i {
+    font-size: 2em;
+    text-align: center;
+    color: #777;
+  }
+  .box-hidden {
+    height: 0px;
+    overflow: hidden;
+  }
+}
